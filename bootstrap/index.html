@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="less/custom.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
-
+    <link rel="stylesheet" href="js/highlight/styles/default.css">
+    <script src="js/highlight/highlight.pack.js"></script>
 </head>
 <body data-spy="scroll" data-target=".scrollspy">
   <header class="header">
@@ -33,104 +34,257 @@
       <div class="component-data">
         <section id="buttons">
           <h2><span class="fa fa-edit"></span> Buttons</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-            tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-            Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Nam quam nunc,
-            blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <button type="button" class="btn btn-default">Default</button>
+          <button type="button" class="btn btn-primary">Primary</button>
+          <button type="button" class="btn btn-success">Success</button>
+          <button type="button" class="btn btn-info">Info</button>
+          <button type="button" class="btn btn-warning">Warning</button>
+          <button type="button" class="btn btn-danger">Danger</button>
+          <button type="button" class="btn btn-link">Link</button>
+          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+          <pre>
+                  <code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
+                  </code>
+            </pre>
         </section><!--end of #buttons-->
 
         <section id="form-fields">
           <h2><span class="fa fa-edit"></span> Form Fields</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <div class="form-group">
+  <label for="exampleInputEmail1">Input field</label>
+  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+</div>
+
+<div class="form-group">
+  <label for="ro">Readonly input field</label>
+  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+</div>
+
+<div class="form-group">
+  <label for="comment">Comment:</label>
+  <textarea class="form-control" rows="5" id="comment"></textarea>
+</div>
+
+<div class="form-group">
+  <label for="exampleInputPassword1">Password</label>
+  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+</div>
+
+<div class="form-group">
+  <label for="exampleInputFile">File input</label>
+  <input type="file" id="exampleInputFile">
+</div>
+
+<div class="form-group">
+  <label for="checkboxinput">Checkbox input</label>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox">Check me out
+    </label>
+  </div>
+</div>
+
+<div class="form-group">
+  <label for="radioinput">Radio input</label>
+  <div class="checkbox">
+    <label>
+      <input type="radio" name="r1"> Option 1
+      <input type="radio" name="r1"> Option 2
+      <input type="radio" name="r1"> Option 3
+    </label>
+  </div>
+</div>
+
+<label for="dropdown">Dropdown</label>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  Dropdown list
+  <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Option 1</a></li>
+    <li><a href="#">Option 2</a></li>
+    <li><a href="#">Option 3</a></li>
+  </ul>
+</div>
+          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+          <pre>
+            <code class="html">
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;exampleInputEmail1&quot;&gt;Input field&lt;/label&gt;
+  &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Email&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;ro&quot;&gt;Readonly input field&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Readonly input here&hellip;&quot; readonly&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;exampleInputFile&quot;&gt;File input&lt;/label&gt;
+  &lt;input type=&quot;file&quot; id=&quot;exampleInputFile&quot;&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;checkboxinput&quot;&gt;Checkbox input&lt;/label&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;checkbox&quot;&gt;Check me out
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;radioinput&quot;&gt;Radio input&lt;/label&gt;
+  &lt;div class=&quot;checkbox&quot;&gt;
+    &lt;label&gt;
+      &lt;input type=&quot;radio&quot; name=&quot;r1&quot;&gt; Option 1
+      &lt;input type=&quot;radio&quot; name=&quot;r1&quot;&gt; Option 2
+      &lt;input type=&quot;radio&quot; name=&quot;r1&quot;&gt; Option 3
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;label for=&quot;dropdown&quot;&gt;Dropdown&lt;/label&gt;
+&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot;&gt;
+  Dropdown list
+  &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu dropdown-menu-left&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option 2&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option 3&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+            </code>
+          </pre>
         </section><!--end of #form-fields-->
 
         <section id="tabs">
           <h2><span class="fa fa-edit"></span> Tabs</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc. Etiam ultricies nisi vel augue.
-            Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-            tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-            Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <ul class="nav nav-tabs">
+            <li role="presentation" class="active"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Profile</a></li>
+            <li role="presentation"><a href="#">Messages</a></li>
+          </ul>
+          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+          <pre>
+            <code class="html">
+&lt;ul class=&quot;nav nav-tabs&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+            </code>
+          </pre>
         </section><!--end of #tabs-->
 
         <section id="tooltip">
           <h2><span class="fa fa-edit"></span> Tooltip</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc.
-            Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-            tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-            Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+          <pre><code class="html">
+&lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
+&lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
+&lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+&lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
+
+          </code>
+          </pre>
+          <pre>
+            <code class="javascript">$('[data-toggle="tooltip"]').tooltip()</code>
+          </pre>
         </section><!--end of #tooltip-->
 
         <section id="tables">
           <h2><span class="fa fa-edit"></span> Tables</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <p>Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus,
-            tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.
-            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.
-            Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris
-            sit amet nibh. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
+          <table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+          <pre>
+            <code class="html">
+&lt;table class=&quot;table table-bordered&quot;&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;#&lt;/th&gt;
+      &lt;th&gt;First Name&lt;/th&gt;
+      &lt;th&gt;Last Name&lt;/th&gt;
+      &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;1&lt;/th&gt;
+      &lt;td&gt;Mark&lt;/td&gt;
+      &lt;td&gt;Otto&lt;/td&gt;
+      &lt;td&gt;@mdo&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;2&lt;/th&gt;
+      &lt;td&gt;Jacob&lt;/td&gt;
+      &lt;td&gt;Thornton&lt;/td&gt;
+      &lt;td&gt;@fat&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;th scope=&quot;row&quot;&gt;3&lt;/th&gt;
+      &lt;td&gt;Larry&lt;/td&gt;
+      &lt;td&gt;the Bird&lt;/td&gt;
+      &lt;td&gt;@twitter&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+            </code>
+          </pre>
         </section><!--end of #tables-->
 
         <section id="popover">
@@ -246,6 +400,11 @@
       bottom: ($('footer').outerHeight(true) + $('.application').outerHeight(true)) + 40
     }
 });
+    $(document).ready(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      hljs.initHighlighting();
+    });
 </script>
 <!--REF http://codepen.io/SitePoint/pen/GgOzwX -->
 </html>
