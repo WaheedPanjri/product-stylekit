@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -10,40 +11,40 @@
     <link rel="stylesheet" href="js/highlight/styles/default.css">
     <script src="js/highlight/highlight.pack.js"></script>
 </head>
-<body data-spy="scroll" data-target=".scrollspy">
-  <header class="header">
-    <div class="logo"></div>
-  </header>
-  <div class="container-fluid">
-    <div class="">
-      <div class="scrollspy component-list">
-        <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
-          <li><a href="#buttons">Buttons</a></li>
-          <li><a href="#form-fields">Form Fields</a></li>
-          <li><a href="#tabs">Tabs</a></li>
-          <li><a href="#tooltip">Tooltip</a></li>
-          <li><a href="#tables">Tables</a></li>
-          <li><a href="#popover">Popover</a></li>
-          <li><a href="#modal">Modal</a></li>
-          <li><a href="#thumbnails">Thumbnails</a></li>
-          <li><a href="#breadcrums">Breadcrums</a></li>
-          <li><a href="#badges">Badges</a></li>
-        </ul>
-      </div>
 
-      <div class="component-data">
-        <section id="buttons">
-          <h2><span class="fa fa-edit"></span> Buttons</h2>
-          <button type="button" class="btn btn-default">Default</button>
-          <button type="button" class="btn btn-primary">Primary</button>
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-info">Info</button>
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-link">Link</button>
-          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
-          <pre>
-                  <code class="html">
+<body data-spy="scroll" data-target=".scrollspy">
+    <header class="header">
+        <div class="logo"></div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 scrollspy component-list">
+                <ul id="nav" class="nav hidden-xs hidden-sm" data-spy="affix">
+                    <li><a href="#buttons">Buttons</a></li>
+                    <li><a href="#form-fields">Form Fields</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#tooltip">Tooltip</a></li>
+                    <li><a href="#tables">Tables</a></li>
+                    <li><a href="#popover">Popover</a></li>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#modal">Modal</a></li>
+                    <li><a href="#thumbnails">Thumbnails</a></li>
+                    <li><a href="#breadcrums">Breadcrums</a></li>
+                    <li><a href="#badges">Badges</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 component-data">
+                <section id="buttons">
+                    <h2><span class="fa fa-edit"></span> Buttons</h2>
+                    <button type="button" class="btn btn-default">Default</button>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                    <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
 &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
@@ -51,72 +52,63 @@
 &lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot;&gt;Link&lt;/button&gt;
-                  </code>
-            </pre>
-        </section><!--end of #buttons-->
-
-        <section id="form-fields">
-          <h2><span class="fa fa-edit"></span> Form Fields</h2>
-          <div class="form-group">
-  <label for="exampleInputEmail1">Input field</label>
-  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-</div>
-
-<div class="form-group">
-  <label for="ro">Readonly input field</label>
-  <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-</div>
-
-<div class="form-group">
-  <label for="comment">Comment:</label>
-  <textarea class="form-control" rows="5" id="comment"></textarea>
-</div>
-
-<div class="form-group">
-  <label for="exampleInputPassword1">Password</label>
-  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-</div>
-
-<div class="form-group">
-  <label for="exampleInputFile">File input</label>
-  <input type="file" id="exampleInputFile">
-</div>
-
-<div class="form-group">
-  <label for="checkboxinput">Checkbox input</label>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox">Check me out
-    </label>
-  </div>
-</div>
-
-<div class="form-group">
-  <label for="radioinput">Radio input</label>
-  <div class="checkbox">
-    <label>
-      <input type="radio" name="r1"> Option 1
-      <input type="radio" name="r1"> Option 2
-      <input type="radio" name="r1"> Option 3
-    </label>
-  </div>
-</div>
-
-<label for="dropdown">Dropdown</label>
-<div class="dropdown">
-  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-  Dropdown list
-  <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
-    <li><a href="#">Option 1</a></li>
-    <li><a href="#">Option 2</a></li>
-    <li><a href="#">Option 3</a></li>
-  </ul>
-</div>
-          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
-          <pre>
-            <code class="html">
+          </code></pre>
+                </section>
+                <!--end of #buttons-->
+                <section id="form-fields">
+                    <h2><span class="fa fa-edit"></span> Form Fields</h2>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Input field</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="ro">Readonly input field</label>
+                        <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                    </div>
+                    <div class="form-group">
+                        <label for="checkboxinput">Checkbox input</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox">Check me out
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="radioinput">Radio input</label>
+                        <div class="checkbox">
+                            <label>
+                                <input type="radio" name="r1"> Option 1
+                                <input type="radio" name="r1"> Option 2
+                                <input type="radio" name="r1"> Option 3
+                            </label>
+                        </div>
+                    </div>
+                    <label for="dropdown">Dropdown</label>
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            Dropdown list
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Option 1</a></li>
+                            <li><a href="#">Option 2</a></li>
+                            <li><a href="#">Option 3</a></li>
+                        </ul>
+                    </div>
+                    <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
 &lt;div class=&quot;form-group&quot;&gt;
   &lt;label for=&quot;exampleInputEmail1&quot;&gt;Input field&lt;/label&gt;
   &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Email&quot;&gt;
@@ -174,85 +166,78 @@
     &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Option 3&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
 &lt;/div&gt;
-            </code>
-          </pre>
-        </section><!--end of #form-fields-->
-
-        <section id="tabs">
-          <h2><span class="fa fa-edit"></span> Tabs</h2>
-          <ul class="nav nav-tabs">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Profile</a></li>
-            <li role="presentation"><a href="#">Messages</a></li>
-          </ul>
-          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
-          <pre>
-            <code class="html">
+            </code></pre>
+                </section>
+                <!--end of #form-fields-->
+                <section id="tabs">
+                    <h2><span class="fa fa-edit"></span> Tabs</h2>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="#">Home</a></li>
+                        <li role="presentation"><a href="#">Profile</a></li>
+                        <li role="presentation"><a href="#">Messages</a></li>
+                    </ul>
+                    <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
 &lt;ul class=&quot;nav nav-tabs&quot;&gt;
   &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
   &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profile&lt;/a&gt;&lt;/li&gt;
   &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Messages&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-            </code>
-          </pre>
-        </section><!--end of #tabs-->
-
-        <section id="tooltip">
-          <h2><span class="fa fa-edit"></span> Tooltip</h2>
-          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
-          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
-          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
-          <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
-
-          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
-          <pre><code class="html">
+            </code></pre>
+                </section>
+                <!--end of #tabs-->
+                <section id="tooltip">
+                    <h2><span class="fa fa-edit"></span> Tooltip</h2>
+                    <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+                    <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+                    <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+                    <button type="button" data-container="body" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+                    <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
 &lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
 &lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
 &lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
 &lt;button type=&quot;button&quot; data-container=&quot;body&quot; class=&quot;btn btn-default&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
-
-          </code>
-          </pre>
-          <pre>
-            <code class="javascript">$('[data-toggle="tooltip"]').tooltip()</code>
-          </pre>
-        </section><!--end of #tooltip-->
-
-        <section id="tables">
-          <h2><span class="fa fa-edit"></span> Tables</h2>
-          <table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Username</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
-  </tbody>
-</table>
-          <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
-          <pre>
-            <code class="html">
+          </code></pre>
+          <pre><span class="copy-code"><a href="#">Copy</a></span>
+<code class="javascript">$('[data-toggle="tooltip"]').tooltip()</code>
+</pre>
+                </section>
+                <!--end of #tooltip-->
+                <section id="tables">
+                    <h2><span class="fa fa-edit"></span> Tables</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <button type="button" class="btn btn-primary">Learn More</button> -->
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
 &lt;table class=&quot;table table-bordered&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
@@ -283,128 +268,237 @@
     &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-            </code>
-          </pre>
-        </section><!--end of #tables-->
+            </code></pre>
+                </section>
+                <!--end of #tables-->
+                <section id="popover">
+                    <h2><span class="fa fa-edit"></span> Popover</h2>
+                    <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on top</button>
 
-        <section id="popover">
-          <h2><span class="fa fa-edit"></span> Popover</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
-        </section><!--end of #popover-->
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on bottom</button>
 
-        <section id="modal">
-          <h2><span class="fa fa-edit"></span> Modal</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
-        </section><!--end of #modal-->
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on right</button>
 
-        <section id="thumbnails">
-          <h2><span class="fa fa-edit"></span> Thumbnails</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
-        </section><!--end of #thumbnails-->
+<button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">Popover on left</button>
 
-        <section id="breadcrums">
-          <h2><span class="fa fa-edit"></span> Breadcrums</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
-        </section><!--end of #breadcrums-->
+                  <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;Popover on top&lt;/button&gt;
 
-        <section id="badges">
-          <h2><span class="fa fa-edit"></span> Badges</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-            massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
-            quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
-          </p>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
-            viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
-            Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
-            Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet
-            adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
-          </p>
-          <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
-            tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
-          </p>
-          <button type="button" class="btn btn-primary">Learn More</button>
-        </section><!--end of #badges-->
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;Popover on bottom&lt;/button&gt;
 
-      </div>
-    
-    </div><!--end of .row-->
-  </div><!--end of .container-->
-   
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;Popover on right&lt;/button&gt;
+
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Vivamus sagittis lacus vel augue laoreet rutrum faucibus.&quot; data-original-title=&quot;&quot; title=&quot;&quot;&gt;Popover on left&lt;/button&gt;
+                  </code></pre>
+                  <pre><span class="copy-code"><a href="#">Copy</a></span>
+<code class="javascript">$(\'[data-toggle=\"popover\"]\').popover();</code>
+</pre>
+                </section>
+                <!--end of #popover-->
+                <section id="accordion">
+                    <h2><span class="fa fa-edit"></span> Accordion</h2>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                          <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                          <h4 class="panel-title">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Collapsible Group Item #3
+                            </a>
+                          </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                          <div class="panel-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
+&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot; role=&quot;tablist&quot; aria-multiselectable=&quot;true&quot;&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;headingOne&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseOne&quot; aria-expanded=&quot;true&quot; aria-controls=&quot;collapseOne&quot;&gt;
+          Collapsible Group Item #1
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseOne&quot; class=&quot;panel-collapse collapse in&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingOne&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;headingTwo&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a class=&quot;collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+          Collapsible Group Item #2
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseTwo&quot; class=&quot;panel-collapse collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingTwo&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel panel-default&quot;&gt;
+    &lt;div class=&quot;panel-heading&quot; role=&quot;tab&quot; id=&quot;headingThree&quot;&gt;
+      &lt;h4 class=&quot;panel-title&quot;&gt;
+        &lt;a class=&quot;collapsed&quot; role=&quot;button&quot; data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+          Collapsible Group Item #3
+        &lt;/a&gt;
+      &lt;/h4&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;collapseThree&quot; class=&quot;panel-collapse collapse&quot; role=&quot;tabpanel&quot; aria-labelledby=&quot;headingThree&quot;&gt;
+      &lt;div class=&quot;panel-body&quot;&gt;
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                    </code></pre>
+                    
+                </section>
+                <!--end of #accordion-->
+                <section id="modal">
+                    <h2><span class="fa fa-edit"></span> Modal</h2>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                      Launch demo modal
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="top: 30%;">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                          </div>
+                          <div class="modal-body">
+                            This is an example of Modal
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; style=&quot;top: 30%;&quot;&gt;
+  &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+    &lt;div class=&quot;modal-content&quot;&gt;
+      &lt;div class=&quot;modal-header&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;&lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;&lt;/button&gt;
+        &lt;h4 class=&quot;modal-title&quot; id=&quot;myModalLabel&quot;&gt;Modal title&lt;/h4&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-body&quot;&gt;
+        This is an example of Modal
+      &lt;/div&gt;
+      &lt;div class=&quot;modal-footer&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Save changes&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+                </section>
+                <!--end of #modal-->
+                <section id="thumbnails">
+                    <h2><span class="fa fa-edit"></span> Thumbnails</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+                    </p>
+                    <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem.
+                    </p>
+                    <p>Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+                    </p>
+                    <button type="button" class="btn btn-primary">Learn More</button>
+                </section>
+                <!--end of #thumbnails-->
+                <section id="breadcrums">
+                    <h2><span class="fa fa-edit"></span> Breadcrums</h2>
+                    <ol class="breadcrumb">
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Library</a></li>
+                      <li class="active">Data</li>
+                    </ol>
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
+&lt;ol class=&quot;breadcrumb&quot;&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Library&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;active&quot;&gt;Data&lt;/li&gt;
+&lt;/ol&gt;
+                    </code></pre>
+                </section>
+                <!--end of #breadcrums-->
+                <section id="badges">
+                    <h2><span class="fa fa-edit"></span> Badges</h2>
+                    <a href="#">Inbox <span class="badge">42</span></a>
+                    <br /><br />
+                    <button class="btn btn-primary" type="button">
+                      Messages <span class="badge">4</span>
+                    </button>
+
+                    <pre><span class="copy-code"><a href="#">Copy</a></span><code class="html">
+&lt;a href=&quot;#&quot;&gt;Inbox &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;
+
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;
+  Messages &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+&lt;/button&gt;
+                    </code></pre>
+                </section>
+                <!--end of #badges-->
+            </div>
+        </div><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <!--end of .row-->
+    </div>
+    <!--end of .container-->
 </body>
 <script>
-    $('#nav').affix({
-    offset: {     
-      top: $('#nav').offset().top,
-      bottom: ($('footer').outerHeight(true) + $('.application').outerHeight(true)) + 40
+$('#nav').affix({
+    offset: {
+        top: $('#nav').offset().top,
+        bottom: ($('footer').outerHeight(true) + $('.application').outerHeight(true)) + 40
     }
 });
-    $(document).ready(function () {
-      $('[data-toggle="tooltip"]').tooltip();
-      $('[data-toggle="popover"]').popover();
-      hljs.initHighlighting();
-    });
+$(document).ready(function() {
+    $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
+    hljs.initHighlighting();
+});
 </script>
 <!--REF http://codepen.io/SitePoint/pen/GgOzwX -->
+
 </html>
